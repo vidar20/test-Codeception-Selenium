@@ -16,6 +16,6 @@ $I->amOnPage('/');
 $I->fillField('login','test');
 $I->fillField('password','test');
 $I->click('#sign-in');
-$I->wait('5');
+$I->wait('3');
 $I->see('Profile info: test test');
 ?>

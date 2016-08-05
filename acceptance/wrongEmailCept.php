@@ -10,6 +10,6 @@ $I->fillField('email','test@');
 $I->fillField('pwd1','test');
 $I->fillField('pwd2','test');
 $I->click('change');
-$I->wait('10');
+$I->wait('3');
 $I->see('Invalid email');
 ?>

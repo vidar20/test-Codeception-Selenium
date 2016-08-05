@@ -36,5 +36,5 @@ $I->fillField('login','new_test');
 $I->fillField('password','newtest');
 $I->click('#sign-in');
 $I->see('Profile info: new_test new_test');
-$I->wait('10');
+$I->wait('3');
 ?>

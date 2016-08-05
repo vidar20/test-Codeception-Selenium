@@ -10,6 +10,6 @@ $I->fillField('email','test@test.ua');
 $I->fillField('pwd1','test');
 $I->fillField('pwd2','test');
 $I->click('change');
-$I->wait('5');
+$I->wait('3');
 $I->see('Thank you for registration');
 ?>

@@ -5,6 +5,6 @@ $I->amOnPage('/');
 $I->fillField('login','incorectLogin');
 $I->fillField('password','incorectPassword');
 $I->click('#sign-in');
-$I->wait('5');
+$I->wait('3');
 $I->see('You wrote incorect login or password');
 ?>

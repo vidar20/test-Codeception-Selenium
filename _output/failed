@@ -1,1 +1,3 @@
-tests\acceptance\checkHintsCept.php
+tests\acceptance\\LogInWrondDataCept.php
+tests\acceptance\\changeLangCept.php
+tests\acceptance\\checkHintsCept.php

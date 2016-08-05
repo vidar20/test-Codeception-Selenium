@@ -28,6 +28,6 @@ $I->fillField('pwd1','newtest');
 $I->fillField('pwd2','newtest');
 $I->click('change');
 $I->see('Profile info: new_test new_test');
-$I->wait('5');
+$I->wait('3');
 
 ?>
