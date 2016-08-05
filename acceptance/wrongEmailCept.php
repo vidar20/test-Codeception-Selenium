@@ -1,6 +1,6 @@
 <?php
 $I = new WebGuy($scenario);
-$I->wantTo('Create new user');
+$I->wantTo('Check incorect email');
 $I->amOnPage('/');
 $I->click('.register_href');
 $I->fillField('first_name','test');

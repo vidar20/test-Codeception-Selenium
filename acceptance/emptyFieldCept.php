@@ -1,6 +1,6 @@
 <?php
 $I = new WebGuy($scenario);
-$I->wantTo('Create new user');
+$I->wantTo('Registratation using empty field');
 $I->amOnPage('/');
 $I->click('.register_href');
 $I->click('change');

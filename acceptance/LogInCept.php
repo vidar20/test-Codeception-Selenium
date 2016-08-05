@@ -1,6 +1,6 @@
 <?php
 $I = new WebGuy($scenario);
-$I->wantTo('Create new user');
+$I->wantTo('Log in the site');
 $I->amOnPage('/');
 $I->click('.register_href');
 $I->fillField('first_name','test');
