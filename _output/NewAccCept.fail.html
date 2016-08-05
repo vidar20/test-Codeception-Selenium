@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link type="text/css" rel="stylesheet" href="/templates/css/default.css" />
+	<script src="/js/lib.js"></script>
+	<script src="/js/common.js"></script>
+	<!--<title>Login</title>-->
+</head>
+<body>
+<div id="wrapper">
+	<div id="content">
+<div class="top-menu">
+	<span class="menu-items"><a href="">Register</a></span>
+	<span class="language">
+					<a href="?lang=de">
+				<img src="images/flags/de.png" alt="lang_de" />
+			</a>
+					<a href="?lang=en">
+				<img src="images/flags/en.png" class="selected" alt="English" />
+			</a>
+					<a href="?lang=ru">
+				<img src="images/flags/ru.png" alt="Русский" />
+			</a>
+					<a href="?lang=ua">
+				<img src="images/flags/ua.png" alt="Українська" />
+			</a>
+			</span>
+</div><div class="form">
+	<h1>Lgin</h1>
+		<form action="/login" method="post">
+		<fieldset>
+			<div class="field-block">
+				<div class="field-error-text hidden"></div>
+				<input type="text" class="field" placeholder="Enter your login" name="login" value="" />
+				<div class="field-info"><img src="images/question_blue.png" /></div>
+				<div class="field-info-text hidden">Enter your login name if you want Log In into your own profile</div>
+			</div>
+
+			<div class="field-block">
+				<div class="field-error-text hidden"></div>
+				<input type="password" class="field" maxlength="50" placeholder="Enter your password" name="password" />
+				<span class="field-info"><img src="images/question_blue.png" /></span>
+				<div class="field-info-text hidden">Password includes numbers and latin letters</div>
+			</div>
+			<div class="field-block">
+				<input type="submit" id="sign-in" value="Sign In" />
+			</div>
+			<div><a href="/register" class="register_href">Click here to register</a></div>
+		</fieldset>
+	</form>
+</div>
+
+<script>
+	var rules = {
+		login : {
+			no_empty : {text: "Please, enter your login", func: validator.not_empty}
+		},
+		password : {
+			no_empty : {text: "Please, enter your password", func: validator.not_empty}
+		}
+	};
+</script>
+</div>
+<div id="footer"><div id="copyright">© 2016</div></div>
+</div>
+<script>
+	(function(){
+		js.event('onclick', '.field-info', hint_func);
+		js.event('onfocus', '.field', focus_func);
+		js.event('onblur', '.field', blur_func);
+		js.event('onclick', '.field-error-text', close_item);
+		js.event('onclick', '.field-info-text', close_item);
+		js.validator('.field', valid_func);
+		//js.event('valid', '.field', valid_func);
+		//js.onclick('.field-info', hint_func);
+	})();
+</script>
+
+</body></html>
